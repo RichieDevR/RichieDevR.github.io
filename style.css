@@ -36,6 +36,7 @@ header .logo
 
 header>.logo>img{
   border-radius:50%;
+  border-collapse: separate; 
 }
 
 /*set flexbox over showcase class,
