@@ -33,6 +33,11 @@ header .logo
   text-transform: uppercase;
   cursor: pointer;
 }
+
+header>h1>img{
+  border-radius:50%;
+}
+
 /*set flexbox over showcase class,
 give z-index of 2 to position over video,
 align flex */
