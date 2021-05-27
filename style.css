@@ -34,7 +34,7 @@ header .logo
   cursor: pointer;
 }
 
-header>h1>img{
+header>.logo>img{
   border-radius:50%;
 }
 
