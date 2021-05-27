@@ -1,6 +1,11 @@
-
-
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 header
 {
   position: absolute;
@@ -13,51 +18,135 @@ header
   justify-content: space-between;
   align-items: center;
 }
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
-h1{
-color:white;
-font-family: 'Poppins' sans-serif;
-
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
 }
 
 
-
-<!--footer-->
-footer{
-	text-align: center;	
-    
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #AB92BF;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
 }
 
-footer #social-media {
-    position: absolute;
-    z-index: 10;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
 }
 
-
-footer #social-media ul {
-    margin: 0;
-	padding: 20px;
-	list-style: none;
-	display: inline-block;
-    
-}
-
-footer #social-media ul li  {
-	float: left;	
-	margin: 15px 5px 8px 5px;
-
-}
-main #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    z-index: -100%;
-  }
+hr{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgb(0, 0, 0),rgba(0,0,0,75),rgba(0,0,0));
   
+}
+
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text h4,ol{
+  color:white;
+  text-transform: uppercase;
+}
+
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+
+
+
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+    text-align:left;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
