@@ -36,7 +36,19 @@ header .logo
 
 header>.logo>img{
   border-radius:50%;
-  border-collapse: separate; 
+  border-collapse: separate;
+  position: absolute;
+  z-index: 10;
+  bottom: 65px;
+  display: flex;
+  margin-right: 20px;
+  filter: invert(0);
+  transform: scale(1);
+  transition: 0.5s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
 }
 
 /*set flexbox over showcase class,
@@ -86,7 +98,9 @@ allow text beneath to be seen if needed*/
   position: relative;
   z-index: 10;
 }
-
+h4::after{
+  color:white;
+}
 .text h2
 {
   font-size: 5em;
@@ -127,20 +141,31 @@ hr{
 /*set flexbox layout and align content,
 set z-index to make sure images 
 are positioned over video*/
-.social
+/*footer 
 {
+  position: absolute;
+  z-index: 10;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+#social .social {
+
   position: absolute;
   z-index: 10;
   bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  display:inline-flex
+
 }
-.social li
+#social .social li
 {
   list-style: none;
 }
-.social li a
+#social .social li a
 {
   display: inline-block;
   margin-right: 20px;
@@ -149,7 +174,7 @@ are positioned over video*/
   transition: 0.5s;
 }
 /*make the buttons jump up when hovered over*/
-.social li a:hover
+ #social .social li a:hover
 {
   transform: scale(0.5) translateY(-15px);
 }
