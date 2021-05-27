@@ -93,7 +93,7 @@ allow text beneath to be seen if needed*/
   mix-blend-mode: overlay;
 }
 /*text class styling rules*/
-.text
+main>.text
 {
   position: relative;
   z-index: 10;
@@ -101,7 +101,7 @@ allow text beneath to be seen if needed*/
 h4::after{
   color:white;
 }
-.text h2
+main>.text> h2
 {
   font-size: 5em;
   font-weight: 800;
@@ -117,7 +117,7 @@ hr{
   
 }
 
-.text h3
+main>.text> h3
 {
   font-size: 4em;
   font-weight: 700;
@@ -125,7 +125,7 @@ hr{
   line-height: 1em;
   text-transform: uppercase;
 }
-.text p
+main>.text p
 {
   font-size: 1.1em;
   color: #fff;
@@ -133,7 +133,7 @@ hr{
   font-weight: 400;
   max-width: 700px;
 }
-.text h4,ol{
+main>.text h4,ol{
   color:white;
   text-transform: uppercase;
 }
@@ -141,24 +141,32 @@ hr{
 /*set flexbox layout and align content,
 set z-index to make sure images 
 are positioned over video*/
-/*footer 
+footer 
 {
   position: absolute;
   z-index: 10;
-  bottom: 25px;
+  bottom: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-}*/
+}
 #social .social {
 
   position: absolute;
   z-index: 10;
-  bottom: 20px;
+  bottom: 2px;
+  right: 0px;
+  left: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-  display:inline-flex
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  text-align: left;
+  width:25%;
+
 
 }
 #social .social li
