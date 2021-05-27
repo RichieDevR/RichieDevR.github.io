@@ -1,4 +1,9 @@
+/*set font-family, box-sizing and 
+import font from google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/*set font-family, box-sizing, margin and padding over page*/
+
 *
 {
   margin: 0;
@@ -6,6 +11,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+/*position header, give it an absolute positioning,
+set z-index to put header over video,
+set flex and padding and width as wel as
+color and case of text*/
 header
 {
   position: absolute;
@@ -24,7 +33,9 @@ header .logo
   text-transform: uppercase;
   cursor: pointer;
 }
-
+/*set flexbox over showcase class,
+give z-index of 2 to position over video,
+align flex */
 .showcase
 {
   position: absolute;
@@ -40,7 +51,8 @@ header .logo
   z-index: 2;
 }
 
-
+/*position video fullscreen give it opacity to 
+allow text beneath to be seen if needed*/
 .showcase video
 {
   position: absolute;
@@ -51,6 +63,7 @@ header .logo
   object-fit: cover;
   opacity: 0.8;
 }
+/*set color overlay over video*/
 .overlay
 {
   position: absolute;
@@ -61,6 +74,7 @@ header .logo
   background: #AB92BF;
   mix-blend-mode: overlay;
 }
+/*text class styling rules*/
 .text
 {
   position: relative;
@@ -75,7 +89,7 @@ header .logo
   line-height: 1em;
   text-transform: uppercase;
 }
-
+/*styling horizontal rule*/
 hr{
   border: 0;
   height: 1px;
@@ -104,6 +118,9 @@ hr{
   text-transform: uppercase;
 }
 
+/*set flexbox layout and align content,
+set z-index to make sure images 
+are positioned over video*/
 .social
 {
   position: absolute;
@@ -125,6 +142,7 @@ hr{
   transform: scale(0.5);
   transition: 0.5s;
 }
+/*make the buttons jump up when hovered over*/
 .social li a:hover
 {
   transform: scale(0.5) translateY(-15px);
@@ -132,7 +150,7 @@ hr{
 
 
 
-
+/*resize the browser window when the width is 991px or less,the header and text are adjusted accordingly*/
 @media (max-width: 991px)
 {
   .showcase,
