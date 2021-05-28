@@ -191,17 +191,20 @@ footer
 
 
 /*resize the browser window when the width is 991px or less,the header and text are adjusted accordingly*/
-@media (max-width: 991px)
+@media (max-width: 40px)
 {
   .showcase,
-  .showcase header
+  .showcase>header
   {
-    padding: 40px;
+    padding: 200px;
+    /*object-fit: cover;*/
+    width: 100%;
   }
   .text h2
   {
     font-size: 3em;
     text-align:left;
+    
   }
   .text h3
   {
