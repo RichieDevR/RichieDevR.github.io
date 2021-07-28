@@ -1,78 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width" />
-    <title>RichieDevR</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
     <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
       rel="stylesheet"
       type="text/css"
-      href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"
     />
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
       rel="stylesheet"
+      type="text/css"
     />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <!--body of page-->
-  <body class="showcase">
-    <!--github username as header and logo-->
-
-    <header>
-      <h1 class="logo">
-        richiedevr<img src="/Img/MyPhoto.jpg" width="50" alt="MyPhoto.jpg" />
-      </h1>
-    </header>
-    <!--video for background-->
-    <video src="video/trainB&W.mp4" muted loop autoplay></video>
-    <!--overlay over background-->
-    <div class="overlay"></div>
-    <!--div tag to help style text on page-->
-    <main id="text">
-      <div class="text">
-        <h2>Welcome!</h2>
-        <h3>My name is richard rosario</h3>
-        <p>I am an aspiring developer and artist from Binghamton, New York</p>
-        <hr />
-        <h3>about me</h3>
-        <p>
-          I will be starting training at Thinkful in June. I hope to wow you
-          with the skills I've been learning so far and am soon to learn.
-          Outside of development I love art in all forms, and specialize in oil
-          pastel work and sketching, as well as graphic design. This is
-          something I hope to incorporate in my future work. Thank you for
-          joining me on this journey.
-        </p>
-
-        <hr />
-        <!--ordered list of goals-->
-        <h4>GOALS AS A DEVELOPER</h4>
-        <ol>
-          <li>become an expert javascript developer</li>
-          <li>Learn the ins and outs of web design & development</li>
-          <li>grow as a person and professional.</li>
-        </ol>
-        <hr />
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">RichieDevR</span>
+        <span class="d-none d-lg-block"
+          ><img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="assets/img/richie.jpg"
+            alt="..."
+        /></span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests"
+              >Interests</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+        </ul>
       </div>
-    </main>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+      <!-- About-->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            Richard
+            <span class="text-primary">Rosario</span>
+          </h1>
+          <div class="subheading mb-5">
+            3766 Waverly Road · Owego, Ny 13827 · (607) 360-3908 ·
+            <a href="mailto:name@email.com">Richie.Rosario@protonmail.com</a>
+          </div>
+          <p class="lead mb-5">
+            I am a Full-Stack Junior Developer Currently enrolled in Thinkful Academy working to improve my skills as a javascript developer. I
 
-    <!--social media links and images for those links-->
+          </p>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com/in/richiedevr" target="_blank" 
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="social-icon" href="https://www.github.com/RichieDevR" target="_blank" ><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Experience-->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Experience</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Freelance Web Developer</h3>
+              <div class="subheading mb-3">RichieDevR</div>
+              <p>
+                  Freelance work for numerous clients since mid 2020. Front-end development
+                  and web design as well as backend integration with cloud services and payment 
+                  providers such as Stripe and Paypal.
+             
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">August 2020 - Present</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Reatil Merchandising</h3>
+              <div class="subheading mb-3">Anderson Merchandising</div>
+              <p>
+                Responsible for overseeing a team of employees during the remodeling
+                process of atleast Three Wal-Mart Superstores.
+            </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">December 2019 - March 2020</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Warehouse Employee</h3>
+              <div class="subheading mb-3">Pensylvania State Liqour Board Warehouses</div>
+              <p>
+                  Operated both a pallet jack and fork lift on multiple occasions in order to pick and pack 
+                  orders for delivery throughout the state of Pensylvania
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">April 2017 - November 2019</span>
+            </div>
+          </div>
+         </section>
+      <hr class="m-0" />
+      <!-- Education-->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Education</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Thinkful Academy</h3>
+              <div class="subheading mb-3">Certified Full Stack Developer</div>
+              <div>MERN Stack</div>
+              <p>Full Stack Bootcamp</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">June 2021 - Present</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Owego Free Academy</h3>
+              <div class="subheading mb-3">Regents Hight School Diploma</div>
+              <p>GPA: 3.56</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">September 2005 - July 2009</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Skills-->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Programming Languages & Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+            <li class="list-inline-item"><i class="fab fa-react"></i></li>
+            <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+            <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+            <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+            <li class="list-inline-item"><i class="fab fa-python"></i></li>
+            <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+            <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+            <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+            <li class="list-inline-item"><i class="fab fa-google"></i></li>
+            <li class="list-inline-item"><i class="fab fa-python"></i></li>
+            <li class="list-inline-item"><img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"/></li>
+            <li class="list-inline-item"><i class="fab fa-git"></i></li>
+            <li class="list-inline-item"><i class="fab fa-redhat"></i></li>
+        
+        </ul>
+            
+        
 
-    <footer id="social">
-      <ul class="social">
-        <li>
-          <a href="https://www.linkedin.com/in/richiedevr" target="_blank"
-            ><img src="/Img/linkedin.png" width="50" alt="linkedin link"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.github.com/RichieDevR" target="_blank"
-            ><img src="/Img/githubnoo.png" width="50" alt="github link"
-          /></a>
-        </li>
-      </ul>
-    </footer>
+          <div class="subheading mb-3">Skills</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Mobile-First, Responsive Design
+            </li>
+            <li><i class="fas fa-caret-right "></i>Media Queries
+            </li>
+            <li><i class="fas fa-caret-right "></i>Bootstrap
+            </li>
+            <li><i class="fas fa-caret-right "></i>Pure CSS Framework
+            </li>
+            <li><i class="fas fa-caret-right "></i>Bulma CSS Framework
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Cross Browser Testing & Debugging
+              <li><i class="fas fa-caret-right "></i> Chrome & FireFox DevTools
+              </li>
+              <li><i class="fas fa-caret-right "></i> FireBug
+              </li>
+            </li>
+            
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Dev-ops automtion and deployment
+              <li><i class="fas fa-caret-right "></i> Docker</li>
+              <li><i class="fas fa-caret-right "></i> Portainer</li>
+              <li><i class="fas fa-caret-right "></i> Ansible</li>
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Agile Development & Scrum
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                OWASP Top Ten & Web Security
+              </li>
+              <li><i class="fas fa-caret-right "></i> Injection
+              </li>
+              <li><i class="fas fa-caret-right "></i> Broken Authentication
+              </li>
+              <li><i class="fas fa-caret-right "></i> Sensitive Data Exposure
+              </li>
+              <li><i class="fas fa-caret-right "></i> XML External Entities XEE
+              </li>
+              <li><i class="fas fa-caret-right "></i> Broken Access Control
+              </li>
+              <li><i class="fas fa-caret-right "></i> Security Misconfiguration
+              </li>
+              <li><i class="fas fa-caret-right "></i> Cross-Site Scripting XSS
+              </li>
+              <li><i class="fas fa-caret-right "></i> Insecure Deserialization
+              </li>
+              <li><i class="fas fa-caret-right "></i> Using Components with Known Vulnerabilities
+              </li>
+              <li><i class="fas fa-caret-right "></i> Insufficient Logging & Monitoring
+              </li>
+              <li><i class="fas fa-caret-right "></i> Active on HackTheBox & TryHackMe
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Backend development & Cloud Services
+                <li><i class="fas fa-caret-right"></i> Azure  
+                    </li>
+                    <li><i class="fas fa-caret-right "></i> AWS Cloud
+              </li>
+              <li><i class="fas fa-caret-right "></i> Google Cloud Platform
+              </li>
+              <li><i class="fas fa-caret-right "></i> MongoDb
+              </li>
+              <li><i class="fas fa-caret-right "></i> NodeJS and ExpressJS
+              </li>
+              <li><i class="fas fa-caret-right "></i> Package Management
+              </li>
+              <li><i class="fas fa-caret-right "></i> API's and Microservices
+              </li>
+
+              <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Firebase Development & Backend-As-A-Service
+                <li><i class="fas fa-caret-right "></i> FireStore                
+                </li>
+                <li><i class="fas fa-caret-right "></i> RealTime Database
+                </li>
+                <li><i class="fas fa-caret-right "></i> Cloud Functions
+                </li>
+                <li><i class="fas fa-caret-right "></i> Authentication
+                </li>
+                <li><i class="fas fa-caret-right "></i> Security Rules
+                </li>
+                <li><i class="fas fa-caret-right "></i> Cloud Messaging</li>
+                
+                  
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Linux Development
+                <li><i class="fas fa-caret-right "></i>Arch
+                    <li><i class="fas fa-caret-right "></i>RedHat
+                    </li>
+                    <li><i class="fas fa-caret-right "></i>Fedora
+                    </li>
+                    <li><i class="fas fa-caret-right "></i>Rocky Linux
+                    </li>
+                    <li><i class="fas fa-caret-right "></i>Ubuntu
+                    </li>
+                    <li><i class="fas fa-caret-right "></i>Debian
+                    </li>
+                          
+                          
+                    
+              </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Interests-->
+      <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Interests</h2>
+          <p>
+            Apart from being a web developer, I enjoy Graphic Design and am an Amateur Artist.
+            I also enjoy Cyber Security Research and am an avid paticipant in Bug Bounty programs and 
+            Capture The Flag tournaments where The goal is to use both my skills at problem solving and my Knowledge of 
+            Networking between computer systems to gain acces into a server and find flags hidden within.
+            With the ultimate goal being to ethically gain knowledge and understanding of how these systems are exploited 
+            in order to better protect them.
+            
+          </p>
+          <p class="mb-0">
+            I also enjoy outdoor activities, such as snowboarding, 
+            hiking, and am working towards a skydiving certification. 
+            I love the sci-fi, fantasy, and horror genres of movies and 
+            television shows, I enjoy Graphic Design and am an Amateur Artist, 
+            and I spend a large amount of my free time exploring the latest 
+            technology advancements in the security and software engineering world. 
+            I am also currently working step by step on developing 
+            an original video game.
+            
+
+
+          </p>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Awards-->
+      <section class="resume-section" id="awards">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Awards & Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              Google Analytics Certified Developer
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              JavaScript Algorithms and Data Structures
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+             Front End Development Libraries Certification
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fas fa-trophy text-warning"></i
+                ></span>
+               Data Vizulaization Certification
+                </li>
+                <li>
+                    <span class="fa-li"
+                      ><i class="fas fa-trophy text-warning"></i
+                    ></span>
+                   Data Analysis with Python Certification
+                    </li>
+
+            <li>
+            
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
